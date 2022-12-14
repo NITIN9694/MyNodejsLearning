@@ -1,7 +1,7 @@
-const arr  = [2,4,6,8];
-  
-var result = arr.filter((i)=>{
-    return i===8;
-}).length;
-
-console.log(result);
+const http = require('http');
+const data = require('./data');
+http.createServer((res,resp)=>{
+resp.writeHead(200,{'Content-Type':'application\json'});
+resp.write(JSON.stringify(data));
+resp.end();
+}).listen(2000);
