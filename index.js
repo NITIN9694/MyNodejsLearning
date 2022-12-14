@@ -1,8 +1,7 @@
-const http = require("http");
+const arr  = [2,4,6,8];
+  
+var result = arr.filter((i)=>{
+    return i===8;
+}).length;
 
-const server = http.createServer((req,res)=>{
-    res.write("hello world");
-    
-});
-
-server.listen(3000);
+console.log(result);
