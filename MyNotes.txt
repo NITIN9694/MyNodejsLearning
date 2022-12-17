@@ -1,1 +1,20 @@
-its working
+Note->
+node js is an async language. 
+
+Synchronous 
+in Synchronous operationd task are perfromed one at the time
+ex->
+      Name -> Age -> Address
+
+Asynchronous 
+in this the second task do not wait to finish First Task 
+ex -> 
+       Nitin 
+         ->Age
+            ->Address
+
+
+Promises 
+
+235107807831
+mcaff2088094
