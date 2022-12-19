@@ -15,6 +15,4 @@ ex ->
 
 
 Promises 
-
-235107807831
-mcaff2088094
+we use Promise functon to slove asynchronous draw back 
