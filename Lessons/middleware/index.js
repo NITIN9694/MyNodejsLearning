@@ -1,25 +1,22 @@
 const express = require("express");
 const app = express();
+const requestFilter  = require('./middleware');
+const router = express.Router();
 
-const reqFilter=(req,res,next)=>{
-    console.log("req",req)
-    if(!req.query.age){
-        res.send("Please provide age");
-    }else if(req.query.age>18){
-      res.send("You are Adult now")
-    }else{
-        next();
-    }
-    
-}
+router.use(requestFilter);
+app.use('/',router);
 
-app.use(reqFilter);
 
-app.get('/users',(req,res)=>{
+router.get('/users',(req,res)=>{
     res.send("Your in User page");
 })
+
 app.get('/',(req,res)=>{
     res.send("Welcome");
+})
+
+router.get('/about',(req,res)=>{
+    res.send("about");
 })
 
 app.listen(2000,()=>{
