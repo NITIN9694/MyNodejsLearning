@@ -15,4 +15,9 @@ ex ->
 
 
 Promises 
-we use Promise functon to slove asynchronous draw back 
+we use Promise functon to slove asynchronous draw back
+
+Middleware
+*if we have to change in to response and request. modifier makes easy to do that Type
+of operations.
+
